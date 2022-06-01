@@ -1,4 +1,4 @@
-# Solveit-
+# Solveit
 Afin d’économiser le temps de recherche et d’améliorer la communication entre les équipes de développement et de partager leurs expériences. ETC Tunisie a proposé un projet sous le  nom de SolveIT, une plateforme dédiée seulement aux ses employées, permet de :  • Résoudre des bugs informatiques • Poser des questions  • Répondre aux questions • Valider une réponse • Consulter la liste des collègues de travail • Consulter la liste des publication (question/réponses) de chaque collègue • Chercher des questions à partir d’une base de connaissance  • Filtrer les publications selon la spécialité de l’employée  • Recevoir des notifications  • Obtenir des informations dans le domaine d’informatique.  • Voter pour des questions ou des réponses.  • Voter contre des questions ou des réponses.  • Discuter avec SolveBot (Chatbot)
 
 # solveit
