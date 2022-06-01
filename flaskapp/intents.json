@@ -1,0 +1,306 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soo"
+      ]
+    },
+   
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "great", "Awesome, thanks", "cool", "perfect, good job", "Thanks for helping me"], 
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "features of python",
+      "patterns": [
+        " What are the key features of Python",
+        "python features"
+      ],
+      "responses": [
+        " Python is an interpreted languag That means that, unlike languages like C and its variants, Python does not need to be compiled before it is run "
+        
+      ]
+    },
+    {
+      "tag": "python type",
+      "patterns": [
+        "What type of language is python? Programming or scriptin",
+        " language types",
+        "python languages "
+        
+
+      ],
+      "responses": [
+        "Python is capable of scripting, but in general sense, it is considered as a general-purpose programming languag To know more about Scripting, you can refer to the Python Scripting Tutoria"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "tell me a joke",
+        " be funny",
+        "make me happy "
+
+      ],
+      "responses": [
+       "A programmer puts two glasses on his bedside table before going to sleep. A full one, in case he gets thirsty, and an empty one, in case he doesn’t.",
+      
+       "A programer walks into a resto, takes a look around and says Hello World!",
+
+       "One walks , takes a look around and says Hello World!"
+      
+      ]    
+   
+    },
+    {
+      "tag": "who",
+      "patterns": [
+        "who are you",
+        "Introduce yourself",
+        "what is your name",
+        "who you?",
+        "can i kow you",
+        "How you could help me?", 
+        "who are you?", 
+        "What you can do?", 
+        "What help you provide?", 
+        "How you can be helpful?"
+      ],
+      "responses": [
+        "I am SolveBot a virtual agent that consume bits and digits in order to help you to get answers of some programing questions and tell you some jokes and some quotes when you seem tired from work"
+      
+      ]
+    },
+    {
+      "tag": "ask", 
+      
+      "patterns": [  "how are you","how are you doing","hru","what's up"], 
+      "responses": ["Fine and you, and you", "doing well, thnx and you", "Good wbu"]
+    },
+    {
+      "tag" : "Q1",
+      "patterns" : [ "what is Python particularly good for? When is using Python the 'right choice' for a project?"],
+      "responses":["Python is a high-level  interpreted  interactive and object-oriented scripting language Python is designed to be highly readable   It uses English keywords frequently where as other languages use punctuation  and it has fewer syntactical constructions than other languages Python is a high-level general-purpose programming language that can be applied to many different classes of problems The language comes with a large standard library that covers areas such as string processing like regular expressions  Unicode  calculating differences between files  Internet protocols like HTTP  FTP  SMTP  XML-RPC  POP  IMAP  CGI programming  software engineering like unit testing  logging  profiling  parsing Python code  and operating system interfaces like system calls  file systems  TCP/IP sockets Although likes and dislikes are highly personal  a developer who is    worth his or her salt    will highlight features of the Python language that are generally considered advantageous (which also helps answer the question of what Python is    particularly good for      Some of the more common valid answers to this question include:-Ease of use and ease of refactoring  thanks to the flexibility of Python's syntax  which makes it especially useful for rapid prototyping   - More compact code  thanks again to Python's syntax  along with a wealth of functionally-rich Python libraries (distributed freely with most Python language implementations)   - A dynamically-typed and strongly-typed language  offering the rare combination of code flexibility while at the same time avoiding pesky implicit-type-conversion bugs  -It's free and open source! Need we say more?With regard to the question of when using Python is the    right choice    for a project  the complete answer also depends on a number of issues orthogonal to the language itself  such as prior technology investment  skill set of the team  and so on   Although the question as stated above implies interest in a strictly technical answer  a developer who will raise these additional issues in an interview will always    score more points    with me since it indicates an awareness of  and sensitivity to  the    bigger picture    (i  e    beyond just the technology being employed)   Conversely  a response that Python is always the right choice is a clear sign of an unsophisticated developer  "]
+    },
+    {
+      "tag" : "Q2",
+      "patterns" : [ "Q. What are some drawbacks of the Python language?"],
+      "responses" : [ " Python implementation is not fully thread safe   In order to support multithreaded Python programs  CPython provides a global lock that must be held by the current thread before it can safely access Python objects   as a result  no matter how many threads or processors are present  only one thread is ever being executed at any given time   In comparison  it is worth noting that the PyPy implementation discussed earlier in this article provides a stackless mode that supports micro-threads for massive concurrency  and execution speed Python can be slower than compiled languages since it is interpreted Well  sort of   See our earlier discussion on this topic" ]
+    },
+    {
+      "tag" : "Q3",
+      "patterns" : [ "What is used to create Unicode string in Python?"],
+      "responses" : [ "should be added before the string a = (u'Python')  type(a) #will give you unicode Add unicode before the string. Ex: unicode(text) resulting in text."]
+    },
+    
+    {
+      "tag" : "number to string",
+      "patterns" : [ "How do I convert a number to a string in python?"],
+      "responses" : [ " To convert, e.g., the number 144 to the string '144', use the built-in function str(). If you want a hexadecimal or octal representation, use the built-in functions hex() or oct(). For fancy formatting, use the % operator on strings, e.g. '%04d' % 144 yields '0144' and '%.3f' % (1/3.0) yields '0.333'. See the library reference manual for details."]
+    },
+    {
+      "tag" : "Q6",
+      "patterns" : [ "How is the Implementation of Python's dictionaries done?"],
+      "responses" : [ " Python dictionary needs to be declared first: -dict = {}  Key value pair can be added as:-dict[key] = value or -objDict.update({key:value}),Remove element by:-dict.pop(key),Remove all: -objDict.clear() -A hash value of the key is computed using a hash function, The hash value addresses a location in an array of 'buckets' or 'collision lists' which contains the (key , value) pair." ]
+    },
+    {
+      "tag" : "Q7",
+      "patterns" : [ "How do I call a method defined in a base class from a derived class that overrides it?"],
+      "responses" : [ " If you're using new-style classes, use the built-in super() function:  $ class Derived(Base): $ def meth (self):  $ super(Derived, self).meth() If you're using classic classes: For a class definition such as class Derived(Base): ... you can call method meth() defined in Base (or one of Base's base classes) as Base.meth(self,arguments). Here, Base.meth is an unbound method, so you need to provide the self argument."]
+    },
+    {
+      "tag" : "Q8",
+      "patterns" : [ "What is the statement that can be used in Python if a statement is required syntactically but the program requires no action?"],
+      "responses" : [ " pass keyword is used to do nothing but it fulfill the syntactical requirements. $ try x[10]: $ print(x) $ except $  pass   Use pass keyword over there like: $ if a > 0: $ print('Hello')  $ else: $ pass " ]
+    },
+    {
+      "tag" : "Q9",
+      "patterns" : [ "Does Python support strongly for regular expressions?"],
+      "responses" : [ " Yes, Python Supports Regular Expressions Well. re is an in-buit library for the same. There is a lot of other languages that have good support to RegEx- Perl, Awk, Sed, Java etc. Regular expressions (called REs, or regexes, or regex patterns) are essentially a tiny, highly specialized programming language embedded inside Python and made available through the re module. Using this little language, you specify the rules for the set of possible strings that you want to match; this set might contain English sentences, or e-mail addresses, or TeX commands, or anything you like. You can then ask questions such as 'Does this string match the pattern?'', or 'Is there a match for the pattern anywhere in this string?'. You can also use REs to modify a string or to split it apart in various ways. Regular expression patterns are compiled into a series of bytecodes which are then executed by a matching engine written in C. For advanced use, it may be necessary to pay careful attention to how the engine will execute a given RE, and write the RE in a certain way in order to produce bytecode that runs faster. Optimization isn't covered in this document, because it requires that you have a good understanding of the matching engine's internals." ]
+    },
+    {
+      "tag" : "Q10",
+      "patterns" : [ " How do you perform pattern matching in Python?"],
+      "responses" : [ " Regular Expressions/REs/ regexes enable us to specify expressions that can match specific 'parts' of a given string. For instance, we can define a regular expression to match a single character or a digit, a telephone number, or an email address, etc. The Python's 're' module provides regular expression patterns and was introduce from later versions of Python 2.5. 're' module is providing methods for search text strings, or replacing text strings along with methods for splitting text strings based on the pattern defined." ]
+    },
+    {
+      "tag" : "Q11",
+      "patterns" : [ "how to rite a regular expression that will accept an email id. Use the re module."],
+      "responses" : [ " $ import re   $ e = re.search(r'[0-9a-zA-Z.]+@[a-zA-Z]+/.(com|co/.in)$' 'JaiRameshwar@gmail.com') $ e.group() $ Ramayanwashere@gmail.com' To brush up on regular expressions, check Regular Expressions in Python." ]
+    },
+    {
+      "tag" : "Q12",
+      "patterns" : [ "What is Garbage Collection?"],
+      "responses" : [ "The concept of removing unused or unreferenced objects from the memory location is known as a Garbage Collection. While executing the program, if garbage collection takes place then more memory space is available for the program and rest of the program execution becomes faster. Garbage collector is a predefined program, which removes the unused or unreferenced objects from the memory location. Any object reference count becomes zero then we call that object as a unused or unreferenced object Then no.of reference variables which are pointing the object is known as a reference count of the object. While executing the python program if any object reference count becomes zero, then internally python interpreter calls the garbage collector and garbage collector will remove that object from memory location." ]
+    },
+    {
+      "tag" : "Q13",
+      "patterns" : [ "Whenever you exit Python, is all memory de-allocated? State why is it so."],
+      "responses" : [ " The answer here is no. The modules with circular references to other objects, or to objects referenced from global namespaces, aren't always freed on exiting Python. Plus, it is impossible to de-allocate portions of memory reserved by the C library. Whenever Python exits, especially those Python modules which are having circular references to other objects or the objects that are referenced from the global namespaces are not always de-allocated or freed.It is impossible to de-allocate those portions of memory that are reserved by the C library.On exit, because of having its own efficient clean up mechanism, Python would try to de-allocate/destroy every other object." ]
+    },
+    {
+      "tag" : "Q14",
+      "patterns" : [ "What is __slots__ and when is it useful in python ?"],
+      "responses" : [ " In Python, every class can have instance attributes. By default Python uses a dict to store an object's instance attributes. This is really helpful as it allows setting arbitrary new attributes at runtime. However, for small classes with known attributes it might be a bottleneck. The dict wastes a lot of RAM. Python can't just allocate a static amount of memory at object creation to store all the attributes. Therefore it sucks a lot of RAM if you create a lot of objects. The usage of __slots__ to tell Python not to use a dict, and only allocate space for a fixed set of attributes. Example: 1. Object without slots $ class MyClass(object):$ def __init__(self, *args, **kwargs): $  self.a = 1 $  self.b = 2 $ if __name__ == '__main__': $ instance = MyClass() $ print(instance.__dict__) 2. Object with slots $ class MyClass(object):$ __slots__=['a', 'b'] $ def __init__(self, *args, **kwargs): $ self.a = 1 $  self.b = 2 $ if __name__ == '__main__': $ instance = MyClass() $ print(instance.__slots__)" ]
+    },
+    {
+      "tag" : "Q15",
+      "patterns" : [ "What are *args, **kwargs ?"],
+      "responses" : [ "In cases when we don't know how many arguments will be passed to a function, like when we want to pass a list or a tuple of values, we use *args. $ def func(*args): $ for i in args: $  print(i) $ func(3,2,1,4,7) $ 3 $ 2 $ 1 $ 4 $ 7 **kwargs takes keyword arguments when we don't know how many there will be: $ def func(**kwargs): $ for i in kwargs: $ print(i,kwargs[i]) $ func(a=1,b=2,c=7)  $ a.1 $ b.2 $ c.7 The words args and kwargs are a convention, and we can use anything in their place." ]
+    },
+    {
+      "tag" : "Q16",
+      "patterns" : [ "?"],
+      "responses" : [ " It overrides the any initialization from an inherited class and is called when the class is instantiated. We know that a package may contain sub-packages and modules. A module is nothing but Python code. To create a package of our own, we create a directory and create a file __init__.py in it. We leave it empty. Then, in that package, we create a module(s) with whatever code we want. For a detailed explanation with pictures, refer to Python Packages." ]
+    },
+    {
+      "tag" : "Q17",
+      "patterns" : [ "What is Monkey patching "],
+      "responses" : [ " Dynamically modifying a class or module at run-time. $ class A: $ def func(self): $ print('Hi') $ def monkey(self): $ print 'Hi, monkey' $ m.A.func = monkey $ a = m.A() $ a.func() => Hi, monkey" ]
+    },
+    {
+      "tag" : "Q18",
+      "patterns" : [ "How do I copy a file? How to copy object in Python? Diff between shallow copy and deep copy?"],
+      "responses" : [ " The shutil module contains a copyfile() function. A deep copy copies an object into another. This means that if you make a change to a copy of an object, it won't affect the original object. In Python, we use the function deepcopy() for this, and we import the module copy. We use it like: $ import copy $ b = copy.deepcopy (a) $ A shallow copy, however, copies one object's reference to another. So, if we make a change in the copy, it will affect the original object. For this, we have the function copy(), we use it like: $ b = copy.copy(a) - Differentiate between lists and tuples. The major difference is that a list is mutable, but a tuple is immutable. Examples: Traceback (most recent call last): File '<pyshell#97>', line 1, in mytuple[1]=2 TypeError: 'tuple' object does not support item assignment " ]
+    },
+    {
+      "tag" : "Q19",
+      "patterns" : [ "What are some drawbacks of the Python language?"],
+      "responses" : [ " Python implementation is not fully thread safe   In order to support multithreaded Python programs  CPython provides a global lock that must be held by the current thread before it can safely access Python objects   as a result  no matter how many threads or processors are present  only one thread is ever being executed at any given time   In comparison  it is worth noting that the PyPy implementation discussed earlier in this article provides a stackless mode that supports micro-threads for massive concurrency  and execution speed Python can be slower than compiled languages since it is interpreted Well  sort of   See our earlier discussion on this topic" ]
+    },
+    {
+      "tag" : "Q20",
+      "patterns" : [ "What is the purpose of PYTHONSTARTUP environment variables?"],
+      "responses" : [ " PYTHONSTARTUP − It contains the path of an initialization file containing Python source code. It is executed every time you start the interpreter. It is named as .pythonrc.py in Unix and it contains commands that load utilities or modify PYTHONPATH. " ]
+    },
+    {
+      "tag" : "Q21",
+      "patterns" : [ "What is the purpose of PYTHONCASEOK environment variables?"],
+      "responses" : [ " PYTHONCASEOK − It is used in Windows to instruct Python to find the first case-insensitive match in an import statement. Set this variable to any value to activate it. " ]
+    },
+    {
+      "tag" : "Q22",
+      "patterns" : [ "What is the purpose of PYTHONHOME environment variables?"],
+      "responses" : [ "PYTHONHOME − It is an alternative module search path. It is usually embedded in the PYTHONSTARTUP or PYTHONPATH directories to make switching module libraries easy." ]
+    },
+    {
+      "tag" : "Q23",
+      "patterns" : [ "What is the purpose of PYTHONPATH environment variables?"],
+      "responses" : [ "PYTHONPATH − It has a role similar to PATH. This variable tells the Python interpreter where to locate the module files imported into a program. It should include the Python source library directory and the directories containing Python source code. PYTHONPATH is sometimes preset by the Python installer." ]
+    },
+    {
+      "tag" : "Q24",
+      "patterns" : [ "What is Hierarchical Inheritance in python?"],
+      "responses" : [ " The concept of inheriting the properties from one class into multiple classes separately is known as hierarchical inheritance.Example:    $ class x(object): $ def m1(self): $ print('in m1 of x')    $ class y(x): $ def m2(self): $ print('in m2 of y')      $ class z(x): $ def m3(self):   $ print('in m3 of z') $ y1=y() $ y1.m1() $ y1.m2() $ a=y1.--hash--()$ print(a) $ z1=z() $ z1.m1() $ z1.m3() $ b=z1.hash--() $ print(b) $ Output: $ M m1 of X $ In m2 of Y $ 2337815 $ In m1 of X $ In m3 of Z $ 2099735" ]
+    },
+    {
+      "tag" : "Q25",
+      "patterns" : [ "How many kinds of sequences are supported by Python? What are they?"],
+      "responses" : [ " Python supports 7 sequence types. They are str, list, tuple, unicode, byte array, xrange, and buffer. where xrange is deprecated in python 3.5.X." ]
+    },
+    {
+      "tag" : "Q26",
+      "patterns" : [ "What is a Python module?"],
+      "responses" : [ " A module is a Python script that generally contains import statements, functions, classes and variable definitions, and Python runnable code and it 'lives' file with a '.py' extension. zip files and DLL files can also be modules.Inside the module, you can refer to the module name as a string that is stored in the global variable name ." ]
+    },
+    {
+      "tag" : "Q27",
+      "patterns" : [ "What is the difference between NumPy and SciPy?"],
+      "responses" : [ " In an ideal world, NumPy would contain nothing but the array data type and the most basic operations: indexing, sorting, reshaping, basic element wise functions, et cetera. All numerical code would reside in SciPy. However, one of NumPy's important goals is compatibility, so NumPy tries to retain all features supported by either of its predecessors. Thus NumPy contains some linear algebra functions, even though these more properly belong in SciPy. In any case, SciPy contains more fully-featured versions of the linear algebra modules, as well as many other numerical algorithms. If you are doing scientific computing with python, you should probably install both NumPy and SciPy. Most new features belong in SciPy rather than NumPy" ]
+    },
+    {
+      "tag" : "Q28",
+      "patterns" : [ "How to open a file c:\\scores.txt for writing in python?"],
+      "responses" : [ " ``fileWriter = open('c:\\scores.txt', 'w')" ]
+    },
+    {
+      "tag" : "Q29",
+      "patterns" : [ "Some Python modules for Statistical, Numerical and scientific computations ?"],
+      "responses" : [ " `numPy` – this module provides an array/matrix type, and it is useful for doing computations on arrays.    `scipy` – this module provides methods for doing numeric integrals, solving differential equations, etc      `pylab` – is a module for generating and saving plots" ]
+    },
+    {
+      "tag" : "Q30",
+      "patterns" : [ "What is TkInter?"],
+      "responses" : [ " TkInter is Python library. It is a toolkit for GUI development. It provides support for various GUI tools or widgets (such as buttons, labels, text boxes, radio buttons, etc) that are used in GUI applications. The common attributes of them include Dimensions, Colors, Fonts, Cursors, etc." ]
+    },
+    {
+      "tag" : "Q31",
+      "patterns" : [ " Difference between append() and extend() methods.?"],
+      "responses" : [ " oth append() and extend() methods are the methods of list. These methods are used to add the elements at the end of the list. append(element) – adds the given element at the end of the list which has called this method. extend(another-list) – adds the elements of another-list at the end of the list which is called the extend method." ]
+    },
+    {
+      "tag" : "Q32",
+      "patterns" : [ " Python program to calculate the sum of a list of numbers."],
+      "responses" : [ "$ def list_sum(num_List): $ if len(num_List) == 1: $ return num_List[0] $ else: $ return num_List[0] + list_sum(num_List[1:]) $ print(list_sum([2, 4, 5, 6, 7])) $ Sample Output: 24 " ]
+    },
+    {
+      "tag" : "Q33",
+      "patterns" : [ "Python program to read a random line from a file."],
+      "responses" : [ "$ import random $ def random_line(fname): $ lines = open(fname).read().splitlines() $ return random.choice(lines) $ print(random_line('test.txt')) " ]
+    },
+    {
+      "tag" : "Q34",
+      "patterns" : [ "What is multithreading? Give an example."],
+      "responses" : [ " It means running several different programs at the same time concurrently by invoking multiple threads. Multiple threads within a process refer the data space with main thread and they can communicate with each other to share information more easily.Threads are light-weight processes and have less memory overhead. Threads can be used just for quick task like calculating results and also running other processes in the background while the main program is running. Thread Is a functionality or logic which can execute simultaneously along with the other part of the program. Thread is a light weight process. Any program which is under execution is known as process. We can define the threads in python by overwriting run method of thread class. Thread class is a predefined class which is defined in threading module Thread in module is a predefined module. If we call the run method directly the logic of the run method will be executed as a normal method logic. In order to execute the logic of the run method as a we use start method of thread class. Example  : $ import threading $ class x (threading.Thread): $ def run(self): $ for p in range(1, 101): $ print(p) $ class y (threading.Thread): $ def run(self): $ for q in range(1, 101): $ print(q)  $ x1=x() $ y1=y() $ x1.start() $ y1.start() = =>A thread is a lightweight process and multithreading allows us to execute multiple threads at once. As you know, Python is a multithreaded language. It has a multithreading package. The GIL (Global Interpreter Lock) ensures that a single thread executes at a time. A thread holds the GIL and does a little work before passing it on to the next thread. This makes for an illusion of parallel execution. But in reality, it is just threaded taking turns at the CPU. Of course, all the passing around adds overhead to the execution." ]
+    },
+    {
+      "tag" : "35",
+      "patterns" : [ "Explain join() and split() in Python."],
+      "responses" : [ " .join([]) It takes any iterables into this method. Join method is used to concatenate the elements of any list. join() lets us join characters from a string together by a character we specify. $ ','.join('12345') => '1,2,3,4,5' - split() lets us split a string around the character we specify. $ '1,2,3,4,5'.split(',') => ['1', '2', '3', '4', '5']" ]
+    },
+    {
+      "tag" : "Q36",
+      "patterns" : [ "What is slicing in python?"],
+      "responses" : [ " These are the types of basic Python interview questions for freshers. Slicing is a technique that allows us to retrieve only a part of a list, tuple, or string. For this, we use the slicing operator []. - (1,2,3,4,5)[2:4] - (3, 4)- [7,6,8,5,9][2:]- [8, 5, 9]- 'Hello'[:-1]- 'Hell'" ]
+    },
+    {
+      "tag" : "Q37",
+      "patterns" : [ "How would you generate a random number in Python?"],
+      "responses" : [ "This kind of Python interview Questions and Answers can Prove your depth of knowledge. To generate a random number, we import the function random() from the module random. $ from random import random $ random() $ 0.7931961644126482 $ Let's call for help on this. $ help(random) $ Help on built-in function random: $ random(…) method of random.Random instance $ random() -> x in the interval [0, 1).  This means that it will return a random number equal to or greater than 0, and less than 1. We can also use the function randint(). It takes two arguments to indicate a range from which to return a random integer.  $ from random import randint $ randint(2,7) $ 6 $ randint(2,7) $ 5 $  randint(2,7) $ 7 $  randint(2,7) 6 $ randint(2,7) $ 2 " ]
+    },
+    {
+      "tag" : "zip",
+      "patterns" : [ "What does the function zip() do?"],
+      "responses" : [ "One of the less common functions with beginners, zip() returns an iterator of tuples. $ list(zip(['a','b','c'],[1,2,3])) $ [('a', 1), ('b', 2), ('c', 3)] $ Here, it pairs items from the two lists, and creates tuples with those. But it doesn't have to be lists. $ list(zip(('a','b','c'),(1,2,3))) $ [('a', 1), ('b', 2), ('c', 3)]" ]
+    },
+    {
+      "tag" : "directory",
+      "patterns" : [ "how can you find out which directory you are currently in?",
+        "Haw can i find khow my directory"
+      ],
+      "responses" : [ "To find this, we use the function/method getcwd(). We import it from the module os.  $ import os $ os.getcwd() $ 'C:/Users/lifei/AppData/Local/Programs/Python/Python36-32' $ type(os.getcwd) $ <class 'builtin_function_or_method'>  We can also change the current working directory with chdir(). $ os.chdir('C:\\Users\\lifei\\Desktop') $ os.getcwd() $ 'C:/Users/lifei/Desktop'" ]
+    },
+    {
+      "tag" : "json",
+      "patterns" : [ " What is JSON? Describe in brief how you'd convert JSON data into Python data?",
+       " What is json"
+      ] ,
+      "responses" : [ "Ans. JSON stands for JavaScript Object Notation. It is a highly popular data format, and it stores data into NoSQL databases. JSON is generally built on the following two structures:A collection of <name,value> pairs An ordered list of values. Python supports JSON parsers. In fact, JSON-based data is internally represented as a dictionary in Python. To convert JSON data into Python data, we use the load() function from the JSON module." ]
+    }
+    
+  
+  ]
+
+}
+
